@@ -1,0 +1,236 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  border: 1px solid #fff;
+  border-radius: 1.5rem;
+  color: #fff;
+  width: 10rem;
+  height: 3rem;
+  background: transparent;
+  align-self: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: #6f4e37;
+  border: 1px solid #6f4e37;
+
+  color: #fff;
+  transition: linear 0.2s;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+/* Header */
+/* Navbar */
+header {
+  height: 100vh;
+}
+
+#logo img {
+  width: 7.5rem;
+}
+
+.navbar {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+}
+
+#hamburger {
+  visibility: hidden;
+}
+/* Navbar */
+
+/* Showcase */
+
+.section-1 {
+  height: 85vh;
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1500px auto;
+  color: #fff;
+}
+
+.section-content {
+  text-align: center;
+  width: 55%;
+  min-height: 70vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-content h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.section-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.3rem;
+}
+
+/* showcase */
+/* header */
+
+/* services */
+.services {
+  min-height: 100vh;
+}
+
+.services h1 {
+  text-align: center;
+  padding: 5rem 0rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.services-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 2rem;
+}
+
+.services-item {
+  border: 1px solid none;
+  border-radius: 2rem;
+  box-shadow: 5px 7px 15px 2px rgba(0, 0, 0, 0.17);
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.services-item img {
+  width: 100px;
+  padding-bottom: 1.8rem;
+}
+
+.services-item h3 {
+  padding-bottom: 0.6rem;
+}
+
+.services-item p {
+  padding-bottom: 0.6rem;
+}
+
+/* services */
+
+/* Location */
+
+.located {
+  background-image: url("./images/pexels-tima-miroshnichenko-5725589.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1500px auto;
+  color: #fff;
+}
+
+.location-content {
+  min-height: 100vh;
+  text-align: center;
+  max-width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location-content h1 {
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+  font-size: 2.5rem;
+}
+
+.location-content p {
+  margin-bottom: 1.8rem;
+  line-height: 1.6rem;
+}
+
+/* Location */
+
+/* footer */
+
+footer {
+  min-height: 70vh;
+  background: #242222;
+}
+.footer-content {
+  color: white;
+  text-align: center;
+}
+
+.footer-content img {
+  width: 250px;
+}
+
+.info li {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+/* footer */
+
+/* responsive  */
+
+@media screen and (max-width: 768px) {
+  .navbar li {
+    visibility: hidden;
+  }
+
+  #logo {
+    visibility: visible;
+  }
+
+  #hamburger {
+    visibility: visible;
+    font-size: 2.5rem;
+  }
+
+  .section-content {
+    width: auto;
+  }
+
+  .services-content {
+    padding-bottom: 2rem;
+  }
+
+  .location-content {
+    width: auto;
+  }
+}
